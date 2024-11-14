@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/A la carta.png">
+    <link rel="stylesheet" href="style1.css">
+
+    <title>Primer Semestre - A LA CARTA</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/A la carta.png" alt="logo">
+            <a href="/">A LA CARTA</a>
+        </div>
+        <nav>
+            <a href="#" id="menu" onclick="toggleMenu()">Menu</a>
+            <div id="nav-mobile" style="display: none;">
+                <a href="#" id="close-mobile" onclick="toggleMenu()">Cerrar</a>
+                <a href="/">Inicio</a>
+                <a href="pagina1.html">Primer Semestre</a>
+                <a href="pagina2.html">Segundo Semestre</a>
+                <a href="pagina3.html">Tercer Semestre</a>
+                <a href="pagina4.html">Cuarto Semestre</a>
+                <a href="pagina5.html">Quinto Semestre</a>
+                <a href="pagina6.html">Sexto Semestre</a>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+        <h1 class="elegant-title">Desarrollo de una aplicación móvil que facilite el control y organice todos los pedidos de un restaurante</h1>
+        <hr class="separator">
+        
+        <div class="square" onclick="showModal('Introducción', 'A partir de nuestra experiencia como usuarios frecuentes de restaurantes, hemos visto una problemática que es poco atendida y consideramos que sucede a nivel general, desde empresas pequeñas hasta grandes, y es la falta de organización con el proceso de los pedidos. Decidimos crear una aplicación que dé control y orden al proceso desde la toma de pedido autónomo por el cliente, agendándolo en fila, dando un control del despacho, informando a todos los clientes su tiempo estimado de entrega de su plato.')">
+            <p>Introducción</p>
+        </div>
+
+        <div class="square" onclick="showModal('Pregunta Problema', '¿Puede una Aplicación móvil colaborar en la organización y eficacia de los trabajadores de un restaurante?')">
+            <p>PREGUNTA PROBLEMA</p>
+        </div>
+
+        <div class="square" onclick="showModal('FORMULACIÓN DEL PROBLEMA', 'Como primera medida, queremos que el desarrollo de esta Aplicación pueda no solo ayudar a los meseros, sino a toda la organización de los restaurantes, generando una coordinación de la información y un control de todo el proceso para que puedan enfocar sus esfuerzos en generar un mejor servicio.')">
+            <p>FORMULACIÓN DEL PROBLEMA</p>
+        </div>
+        
+        <div class="objectives">
+            <h2>Objetivos</h2>
+            <div class="dropdown">
+                <button class="dropbtn">Mostrar Objetivos</button>
+                <div class="dropdown-content">
+                    <div class="dropdown-section">
+                        <h3>Objetivos Generales</h3>
+                        <ul>
+                            <li onclick="showModal('Objetivo 1', 'Crear una plataforma que facilite la interacción entre usuarios y restaurantes, adaptándose a las necesidades específicas de ambos grupos.')">Desarrollar una aplicación web de gestión de pedidos</li>
+                            <li onclick="showModal('Objetivo 2', 'Realizar un análisis exhaustivo de las expectativas y requerimientos de los usuarios y restaurantes para asegurar que la aplicación cumpla con sus demandas y mejore la experiencia de uso.')">Investigar y entender las necesidades del mercado</li>
+                            <li onclick="showModal('Objetivo 3', 'Fomentar la interacción entre clientes y restaurantes, permitiendo que los usuarios dejen comentarios, valoraciones y recomendaciones, así como que los restaurantes respondan y se adapten a las necesidades de sus clientes.')">Fomentar la interacción entre clientes y restaurantes</li>
+                            <li onclick="showModal('Objetivo 4', 'Desarrollar funcionalidades que permitan a los usuarios personalizar sus pedidos según sus preferencias y necesidades dietéticas, mejorando la satisfacción del cliente.')">Ofrecer Opciones de Personalización</li>
+                            <li onclick="showModal('Objetivo 5', 'Integrar métodos de pago seguros y diversos para facilitar las transacciones y brindar confianza a los usuarios al realizar sus pedidos.')">Integrar Métodos de Pago</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-section">
+                        <h3>Objetivos Específicos</h3>
+                        <ul>
+                            <li onclick="showModal('Específico 1', 'Investigar las necesidades de los usuarios y restaurantes para crear una aplicación que se adapte a sus requerimientos.')">Investigación de Necesidades</li>
+                            <li onclick="showModal('Específico 2', 'Definir la base de datos que se usara en la base de datos y crearla.')">Desarrollo de Prototipos</li>
+                            <li onclick="showModal('Específico 3', 'Crear el mockup de la aplicacion web.')">Sistema de Gestión de Pedidos</li>
+                            <li onclick="showModal('Específico 4', 'Realizar la documentación necesaria para la correcta planeación del proyecto.')">Campañas de Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="main-content">
+        <hr class="separator">
+    
+        <div class="accordion">
+            <button class="accordion-button" onclick="toggleAccordion(this)">JUSTIFICACIÓN</button>
+            <div class="accordion-content">
+                <p>Se llegó a la conclusión de que el proyecto es viable debido a que el nicho al que vamos enfocados es uno que no ha sido atendido, al menos no de la manera correcta. Los integrantes del proyecto estuvimos involucrados en algún punto con el sector de la comida y de restaurante, y las problemáticas que deseamos afrontar son las que llevan años y años, y no se llega a una conclusión real de cómo abordarlas.</p>
+            </div>
+        </div>
+    
+        <div class="accordion">
+            <button class="accordion-button" onclick="toggleAccordion(this)">ALCANCE</button>
+            <div class="accordion-content">
+                <p>El rango que vamos a abarcar será los restaurantes como primera medida de conocidos y familiares, teniendo un alcance máximo como primer momento del proyecto sectores de la localidad de Usaquén.</p>
+            </div>
+        </div>
+    
+        <div class="accordion">
+            <button class="accordion-button" onclick="toggleAccordion(this)">ANTECEDENTES LOCALES</button>
+            <div class="accordion-content">
+                <p><strong>Sien:</strong> Sien es un sistema de gestión de restaurantes que permite a los propietarios tomar pedidos, gestionar reservas y realizar seguimiento de inventarios. Su interfaz intuitiva facilita la toma de pedidos en tiempo real y permite la integración con plataformas de entrega. Sien está diseñado para ayudar a los restaurantes a optimizar sus operaciones y mejorar la experiencia del cliente, todo con un enfoque en las necesidades del mercado colombiano.</p>
+                <p><strong>Tock:</strong> Aunque es una plataforma más conocida a nivel internacional, Tock tiene presencia en Colombia y se adapta a las necesidades de los restaurantes locales. Ofrece gestión de reservas y pedidos anticipados, permitiendo a los establecimientos planificar mejor su capacidad y ofrecer experiencias personalizadas a sus clientes.</p>
+                <p><strong>Restaurantes.com.co:</strong> Esta plataforma colombiana se especializa en reservas y pedidos para restaurantes. Ofrece un sistema que permite a los usuarios hacer reservas en línea y realizar pedidos para llevar.</p>
+            </div>
+        </div>
+    
+        <div class="accordion">
+            <button class="accordion-button" onclick="toggleAccordion(this)">ANTECEDENTES INTERNACIONALES</button>
+            <div class="accordion-content">
+                <p><strong>Toast:</strong> Toast es un sistema de punto de venta (POS) diseñado específicamente para restaurantes, que ofrece herramientas para la toma de pedidos, gestión de mesas y programación de pedidos.</p>
+                <p><strong>Square for Restaurants:</strong> Proporciona una solución integral para la gestión de pedidos, pagos y reservas.</p>
+                <p><strong>ChowNow:</strong> Ayuda a los restaurantes a establecer su propio sistema de pedidos en línea, mejorando la experiencia del cliente y aumentando las ganancias.</p>
+            </div>
+        </div>
+    
+        <div class="accordion">
+            <button class="accordion-button" onclick="toggleAccordion(this)">MARCO TEÓRICO</button>
+            <div class="accordion-content">
+                <p>En la era digital actual, el comercio electrónico ha revolucionado
+                </div>
+            </div>
+        
+            <div class="accordion">
+                <button class="accordion-button" onclick="toggleAccordion(this)">EL MARKETING DIGITAL</button>
+                <div class="accordion-content">
+                    <p>El Marketing Digital se refiere a una forma de marketing que utiliza nuevos medios y canales publicitarios tecnológicos y digitales. Representa una evolución del marketing que permite crear estrategias basadas en productos personalizados y mensajes diferenciados.</p>
+                </div>
+            </div>
+        
+            <div class="accordion">
+                <button class="accordion-button" onclick="toggleAccordion(this)">HIPÓTESIS</button>
+                <div class="accordion-content">
+                    <p>La creciente necesidad de soluciones de gestión de pedidos en el sector de restaurantes ha creado un espacio para "A LA CARTA", ofreciendo una alternativa accesible y eficiente que mejora la competitividad de los restaurantes en el mercado.</p>
+                </div>
+            </div>
+            
+            <div class="accordion">
+                <button class="accordion-button" onclick="toggleAccordion(this)">MARCO LEGAL</button>
+                <div class="accordion-content">
+                    <p>El comercio electrónico se ha convertido en una de las principales formas de venta de productos y servicios debido a su amplio alcance y accesibilidad. Sin embargo, conlleva la responsabilidad de manejar los datos de los usuarios de manera ética y segura para proteger su información.</p>
+                    <h4>RIESGOS PARA EL CONSUMIDOR</h4>
+                    <p>El e-commerce presenta ciertos riesgos para los consumidores, entre los cuales se destacan:</p>
+                    <ul>
+                        <li>Fraude: Riesgo de estafas o transacciones no autorizadas.</li>
+                        <li>Manejo de datos sin autorización: Peligro de que los datos de los usuarios se utilicen sin el debido permiso.</li>
+                        <li>Phishing: Intentos de engañar a los usuarios para obtener su información personal.</li>
+                    </ul>
+                    <p>Para mitigar estos riesgos, "A LA CARTA" debe cumplir con los derechos de los consumidores establecidos en la legislación colombiana, como:</p>
+                    <ul>
+                        <li><strong>Ley 527 de 1999 y Decreto 1074 de 2015:</strong> Regulan el uso de mensajes de datos, el comercio electrónico y las firmas digitales.</li>
+                        <li><strong>Estatuto del Consumidor (Ley 1480 de 2011):</strong> Ofrece protección especial a los consumidores de comercio electrónico.</li>
+                    </ul>
+                    <h4>REQUISITOS LEGALES PARA VENDER EN LÍNEA</h4>
+                    <ul>
+                        <li><strong>RUT y Registro Empresarial:</strong> "A LA CARTA" debe estar registrado y autorizado para operar en el mercado colombiano, lo que incluye contar con el Registro Único Tributario (RUT).</li>
+                        <li><strong>Protección al Consumidor:</strong> Es fundamental proteger los datos de los clientes y garantizar un manejo responsable de la información dentro de la plataforma.</li>
+                        <li><strong>Plataformas de Pago:</strong> Selección de métodos y plataformas de pago seguras y autorizadas para facilitar las transacciones.</li>
+                        <li><strong>Manejo de Base de Datos:</strong> La recolección y uso de datos debe cumplir con la normativa de protección de datos, asegurando que se obtenga la autorización necesaria de los usuarios.</li>
+                        <li><strong>Información Clara y Veraz:</strong> Es esencial que los productos y servicios se describan de manera precisa y transparente, facilitando al usuario un flujo de compra claro y completo.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    
+        <script>
+            // Función para alternar la visibilidad del acordeón
+            function toggleAccordion(button) {
+                var content = button.nextElementSibling; // Obtiene el siguiente elemento (contenido)
+                // Cambia el estilo de visualización
+                if (content.style.display === "block") {
+                    content.style.display = "none"; // Ocultar si está visible
+                } else {
+                    content.style.display = "block"; // Mostrar si está oculto
+                }
+            }
+        </script>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-content"></p>
+        </div>
+    </div>
+
+    <script>
+        // Función para alternar la visibilidad del menú móvil
+        function toggleMenu() {
+            var navMobile = document.getElementById("nav-mobile");
+            navMobile.style.display = navMobile.style.display === "block" ? "none" : "block";
+        }
+
+        // Función para alternar la visibilidad del dropdown de objetivos generales
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdown-content");
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        }
+
+        // Función para alternar la visibilidad del dropdown de objetivos específicos
+        function toggleSpecificDropdown() {
+            var dropdownContent = document.getElementById("dropdown-specific-content");
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        }
+
+        // Función para mostrar la ventana modal con el contenido especificado
+        function showModal(title, content) {
+            var modal = document.getElementById("myModal");
+            var modalTitle = document.getElementById("modal-title");
+            var modalContent = document.getElementById("modal-content");
+
+            modal.style.display = "block"; // Mostrar la modal
+            modalTitle.innerText = title; // Establecer el título de la modal
+            modalContent.innerText = content; // Establecer el contenido de la modal
+        }
+
+        // Función para cerrar la ventana modal
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none"; // Ocultar la modal
+        }
+
+        // Cerrar la modal cuando se hace clic fuera de ella
+        window.onclick = function(event) {
+            var modal = document.getElementById("myModal");
+            if (event.target === modal) {
+                closeModal();
+            }
+        };
+
+        // Cerrar la modal cuando se presiona la tecla 'Esc'
+        window.onkeydown = function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        };
+    </script>
+     <script>
+        // Función para alternar la visibilidad del acordeón
+        function toggleAccordion(button) {
+            var content = button.nextElementSibling; // Obtiene el siguiente elemento (contenido)
+            // Cambia el estilo de visualización
+            if (content.style.display === "block") {
+                content.style.display = "none"; // Ocultar si está visible
+            } else {
+                content.style.display = "block"; // Mostrar si está oculto
+            }
+        }
+    </script>
+    </script>
+    <footer>
+        <div class="container">
+            <div class="profile">
+                <div class="logo">
+                    <img src="assets/A la carta.png" alt="logo" />
+                    <a href="#">A la Carta</a>
+                </div>
+                <p>Tus Órdenes en Orden</p>
+                <div class="whatsapp">
+                    <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank">
+                        <box-icon color="#fff" type="logo" name="whatsapp" size="50px"></box-icon>
+                    </a>
+                </div>
+            </div>
+      
+            <div class="link-container">
+                <div class="information">
+                    <h1>Nuestras habilidades</h1>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>MySQL</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+      
+                <div class="navigation">
+                    <h1>Navegación</h1>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Skill</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </footer>
+</body>
+</html>

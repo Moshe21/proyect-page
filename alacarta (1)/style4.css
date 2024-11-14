@@ -1,0 +1,375 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    cursor: url('assets/gam1564.cur'), pointer;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #222; /* Fondo oscuro para el encabezado */
+    padding: 20px 40px; /* Aumentar el padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Ajusta el tamaño del logo */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px; /* Aumentar el espacio horizontal entre los enlaces del menú */
+    font-size: 18px; /* Aumentar el tamaño de la fuente */
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f39c12; /* Color al pasar el mouse */
+}
+
+/* Estilo del contenido principal */
+.container {
+    width: 80%;
+    margin: 40px auto; /* Centrar el contenido */
+    padding: 20px;
+    background-color: #111; /* Fondo más claro para el contenido principal */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para el contenido principal */
+}
+
+/* Títulos */
+h2 {
+    margin: 30px 0; /* Aumentar el margen vertical de los títulos */
+    color: #f39c12; /* Color de los títulos */
+    font-size: 26px; /* Aumentar el tamaño de la fuente del título */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilo de los párrafos */
+p {
+    line-height: 1.6;
+    margin-bottom: 20px; /* Margen inferior para separación */
+}
+
+/* Estilo del pie de página */
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: 2px solid #fff;
+    padding: 40px 0; /* Aumentar el padding del pie de página */
+    background-color: #222; /* Fondo oscuro para el pie de página */
+}
+
+footer .container {
+    padding: 0 4rem; /* Añadir padding lateral */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 4rem; /* Espacio entre elementos del pie de página */
+    justify-content: center; /* Centrar los elementos en el footer */
+}
+
+footer .container .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Aumentar el espacio entre elementos en el perfil */
+    width: 25%;
+}
+
+footer .container .link-container {
+    width: 70%;
+    display: flex;
+    gap: 4rem; /* Espacio entre secciones del pie de página */
+}
+
+footer .container .link-container .information,
+footer .container .link-container .resource,
+footer .container .link-container .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Aumentar el espacio entre elementos en el pie de página */
+    width: 30%;
+}
+
+footer .container .profile .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre logo y texto */
+}
+
+footer .container .profile .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+footer .container .profile .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+footer .container .profile p {
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+footer .container .profile .social-media-container {
+    display: flex;
+    gap: 12px; /* Espacio entre iconos de redes sociales */
+}
+
+footer .container .profile .social-media-container .social-media {
+    cursor: pointer;
+    width: 40px; /* Aumentar el tamaño de los iconos */
+    height: 40px;
+    padding: 8px; /* Aumentar el padding */
+    border-radius: 50%;
+    background-color: #191919;
+    transition: transform 1s linear;
+}
+
+.footer .container .profile .social-media-container .social-media:hover {
+    transform: rotateY(360deg);
+}
+
+footer .container .link-container .information h1,
+footer .container .link-container .resource h1,
+footer .container .link-container .navigation h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center; /* Centrar el texto */
+}
+
+footer .container .link-container .information ul,
+footer .container .link-container .resource ul,
+footer .container .link-container .navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Aumentar el espacio entre elementos de la lista */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+footer .container .link-container .information ul li,
+footer .container .link-container .resource ul li,
+footer .container .link-container .navigation ul li {
+    cursor: pointer;
+}
+
+footer .container .link-container .information ul li a,
+footer .container .link-container .resource ul li a,
+footer .container .link-container .navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Transición para el color */
+}
+
+footer .container .link-container .information ul li:hover a,
+footer .container .link-container .resource ul li:hover a,
+footer .container .link-container .navigation ul li:hover a {
+    color: #f39c12; /* Color al pasar el mouse */
+}
+
+/* Línea separadora en las listas */
+footer .container .link-container .information ul li::after,
+footer .container .link-container .resource ul li::after,
+footer .container .link-container .navigation ul li::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #fff; /* Línea separadora */
+    width: 40%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s linear;
+    margin-top: 4px;
+}
+
+footer .container .link-container .information ul li:hover::after,
+footer .container .link-container .resource ul li:hover::after,
+footer .container .link-container .navigation ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.6s linear;
+}
+
+/* Estilo para los contenedores de datos */
+.database-container, .diccionario-container, .database-creation-container {
+    display: flex;
+    margin-top: 40px;
+    background-color: #111; /* Fondo más claro para los contenedores de datos */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para los contenedores */
+}
+
+.database-info, .diccionario-info, .database-creation-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.database-image, .diccionario-excel, .database-creation-pdf {
+    flex: 1;
+}
+
+/* Estilo de los iframes dentro de los contenedores */
+.database-image img, .diccionario-excel iframe, .database-creation-pdf iframe {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Espaciado adicional para mejorar la separación visual */
+.main-content, .square, .modal-content {
+    margin-bottom: 40px; /* Aumentar el margen inferior */
+}
+
+/* Estilo para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1; /* Por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Habilitar scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+}
+
+.modal-content {
+    background-color: #222; /* Fondo del contenido del modal */
+    margin: 10% auto; /* Centramos verticalmente el modal */
+    padding: 30px; /* Aumentar el padding del contenido del modal */
+    border: 1px solid #f39c12; /* Borde del modal */
+    width: 80%; /* Ancho del modal */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba0, 0.5); /* Sombra para el modal */
+}; /* Sombra para el modal */
+}
+
+.close {
+    color: #aaa; /* Color de la X de cerrar */
+    float: right;
+    font-size: 30px; /* Aumentar el tamaño de la X */
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #f39c12; /* Color al pasar el mouse */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo del contenedor de mockups */
+.mockups-section {
+    margin-top: 60px; /* Aumentar el margen superior */
+}
+
+/* Espaciado entre los mockups y los botones de PDF */
+.pdf-buttons-container {
+    margin-top: 40px; /* Aumentar el margen superior para más separación */
+}
+
+/* Estilo de los botones de PDF */
+.pdf-box button {
+    background-color: #f39c12; /* Color de fondo llamativo */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 12px 24px; /* Aumentar el padding para un botón más grande */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente más grande */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    transition: background-color 0.3s, transform 0.2s; /* Transición para el color y el efecto de transformación */
+}
+
+.pdf-box button:hover {
+    background-color: #e67e22; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.pdf-box button:focus {
+    outline: none; /* Sin contorno en el enfoque */
+}
+
+/* Asegurar que el footer esté centrado */
+footer .container {
+    justify-content: center; /* Centrar los elementos en el footer */
+}
+
+/* Asegurar que los elementos del acordeón también estén centrados */
+.accordion-content {
+    display: flex; /* Usar flexbox para centrar */
+    flex-direction: column; /* Alinear en columna */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+/* Asegurar que los enlaces en el footer estén centrados */
+footer .container .link-container .information ul,
+footer .container .link-container .resource ul,
+footer .container .link-container .navigation ul {
+    align-items: center; /* Centrar horizontalmente */
+}
+
+/* Asegurar que los títulos en el footer estén centrados */
+footer .container .link-container .information h1,
+footer .container .link-container .resource h1,
+footer .container .link-container .navigation h1 {
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilo para el contenedor de datos */
+.database-container, .diccionario-container, .database-creation-container {
+    display: flex;
+    margin-top: 40px;
+    background-color: #111; /* Fondo más claro para los contenedores de datos */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para los contenedores */
+}
+
+.database-info, .diccionario-info, .database-creation-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.database-image, .diccionario-excel, .database-creation-pdf {
+    flex: 1;
+}
+
+/* Estilo de los iframes dentro de los contenedores */
+.database-image img, .diccionario-excel iframe, .database-creation-pdf iframe {
+    width: 100%;
+    border-radius: 8px;
+}
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .logo img {
+    height: 100%;
+      width: 75px;
+    }
+  
+  header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+  }

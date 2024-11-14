@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/A la carta.png">
+    <link rel="stylesheet" href="style3.css"> <!-- Enlace al CSS -->
+    <title>Tercer Semestre - A LA CARTA</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById('nav-mobile');
+            nav.style.display = nav.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            ScrollReveal().reveal('.reveal', {
+                distance: '50px',
+                duration: 1000,
+                easing: 'ease-in-out',
+                origin: 'bottom',
+                interval: 200 // Intervalo entre animaciones
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/A la carta.png" alt="logo">
+            <a href="/">A LA CARTA</a>
+        </div>
+        <nav>
+            <a href="#" id="menu" onclick="toggleMenu()">Menu</a>
+            <div id="nav-mobile" style="display: none;">
+                <a href="#" id="close-mobile" onclick="toggleMenu()">Cerrar</a>
+                <a href="/">Inicio</a>
+                <a href="pagina1.html">Primer Semestre</a>
+                <a href="pagina2.html">Segundo Semestre</a>
+                <a href="pagina3.html">Tercer Semestre</a>
+                <a href="pagina4.html">Cuarto Semestre</a>
+                <a href="pagina5.html">Quinto Semestre</a>
+                <a href="pagina6.html">Sexto Semestre</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Desarrollo Tercer Semestre</h2>
+        <p>Documentos desarrollados.</p>
+        
+        <div class="pdf-buttons-container reveal" style="display: flex; justify-content: space-around; margin-top: 20px;">
+            <div class="pdf-box" style="text-align: center;">
+                <h3>Proyecto 1</h3>
+                <button onclick="openModal('modal1')">Abrir PDF 1</button>
+            </div>
+            <div class="pdf-box" style="text-align: center;">
+                <h3>Proyecto 2</h3>
+                <button onclick="openModal('modal2')">Abrir EXCEL 2</button>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="modal1" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <iframe src="A LA CARTA VERSION 2.0.pdf" width="100%" height="600" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <p>Haga clic en el siguiente enlace para descargar el archivo Excel:</p>
+                <a href="DESARROLLO DE TRABAJO ANUAL.xlsx" download>Descargar DICCIONARIO DE DATOS.xlsx</a>
+            </div>
+        </div>
+
+        <!-- MOCKUPS Section -->
+        <div class="mockups-section reveal" style="margin-top: 40px;">
+            <h2>MOCKUPS</h2>
+            <div class="mockup-image" style="text-align: center; margin: 20px 0;">
+                <img src="assets/MOCKUP1.jpeg" alt="Mockup 1" width="20%" />
+            </div>
+            <div class="mockup-image" style="text-align: center; margin: 20px 0;">
+                <img src="assets/MOCKUP2.jpeg" alt="Mockup 2" width="20%" />
+            </div>
+            <div class="mockup-image" style="text-align: center; margin: 20px 0;">
+                <img src="assets/MOCKUP3.jpeg" alt="Mockup 3" width="20%" />
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="profile">
+                <div class="logo">
+                    <img src="assets/A la carta.png" alt="logo" />
+                    <a href="#">A la Carta</a>
+                </div>
+                <p>Tus Órdenes en Orden</p>
+                <div class="whatsapp">
+                    <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank">
+                        <box-icon color="#fff" type="logo" name="whatsapp" size="50px"></box-icon>
+                    </a>
+                </div>
+            </div>
+      
+            <div class="link-container">
+                <div class="information">
+                    <h1>Nuestras habilidades</h1>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>MySQL</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+              
+                <div class="navigation">
+                    <h1>Navegación</h1>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Skill</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script3.js"></script> <!-- Enlace al JS -->
+</body>
+</html>

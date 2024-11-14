@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Icon -->
+    <link rel="icon" href="assets/A la carta.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img id="logo" src="assets/A la carta con fondo.png" alt="logo" />
+        <a id="titulo" href="/">A LA CARTA</a>
+      </div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#about">Acerca de nosotros</a>
+        <a href="#skill">Habilidades</a>
+        <a href="#project">Documentación</a>
+        <a href="#contact">Contáctanos</a>
+
+        <!-- Nuevo menú desplegable "Desarrollo" -->
+        <div class="dropdown">
+          <a href="#">Desarrollo</a>
+          <div class="dropdown-content">
+            <a href="pagina1.html">Primer Semestre</a>
+            <a href="pagina2.html">Segundo Semestre</a>
+            <a href="pagina3.html">Tercer Semestre</a>
+            <a href="pagina4.html">Cuarto Semestre</a>
+            <a href="pagina5.html">Quinto Semestre</a>
+            <a href="pagina6.html">Sexto Semestre</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="extra-nav">
+        <button>Get In Touch</button>
+      </div>
+
+      <div id="menu" class="hamburger-menu">
+        <svg
+          width="35px"
+          height="35px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 18L20 18"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 12L20 12"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 6L20 6"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="nav-mobile" class="mobile-nav">
+        <div id="close-mobile" class="close">
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 2px;
+                }
+              </style>
+            </defs>
+
+            <title />
+
+            <g id="cross">
+              <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+
+              <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+            </g>
+          </svg>
+        </div>
+        <ul>
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#about">Acerca de nosotros</a></li>
+          <li><a class="nav-link" href="#skill">Habilidades</a></li>
+          <li><a class="nav-link" href="#project">Proyectos</a></li>
+          <li><a class="nav-link" href="#contact">Contáctanos</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="content">
+          <svg viewBox="0 0 1500 500" data-aos="fade-down">
+            <text x="50%" y="50%" text-anchor="middle">A LA CARTA</text>
+          </svg>
+          <h1 data-aos="zoom-in-up">  
+            La aplicación creada para dar solución a el orden en tu <span>NEGOCIO</span>
+          </h1>
+          <div class="button-container" data-aos="zoom-out">
+            <a href="https://github.com/SANTIAGOG03" target="_blank" class="button">TRABAJOS</a>
+            <a href="https://github.com/Moshe21" target="_blank" class="button">TRABAJOS</a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <section id="about" class="about">
+        <div class="container">
+          <div class="content">
+            <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Acerca de Nosotros
+            </h1>
+            <div class="about-me">
+              <div data-aos="zoom-out-right" data-aos-delay="300" class="profile">
+                <div class="image-box">
+                  <img id="foto_MosheZ" src="assets/MosheZ.png" alt="profile" />
+                </div>
+                <div class="name-role">
+                  <h1>Moises Zabaleta</h1>
+                  <div class="role">
+                    <h2>Estudiante desarrollo Software </h2>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                  dolore aliquid excepturi totam quia, facilis, dicta, cupiditate
+                  deleniti explicabo possimus et nam magnam commodi necessitatibus
+                  tempora amet earum libero suscipit aspernatur facere delectus
+                  nisi soluta.
+                </p>
+              </div>    
+      
+              <div data-aos="zoom-out-right" data-aos-delay="300" class="profile">
+                <div class="image-box">
+                  <img id="foto_SantiagoG" src="assets/SantiagoG.jpeg" alt="developer1" />
+                </div>
+                <div class="name-role">
+                  <h1>Santiago Guerrero</h1>
+                  <div class="role">
+                    <h2>Estudiante Desarrollo Software</h2>
+                  </div>
+                </div>
+                <p>
+                  Santiago es un entusiasta estudiante de desarrollo de software con conocimientos en bases de datos y desarrollo de paginas web.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="skill" class="skill">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+           Nuestras habilidades
+          </h1>
+
+          <div class="skills" data-aos-delay="500">
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/html5.svg" alt="html" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/css3.svg" alt="css" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/javascript.svg" alt="javascript" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/mysql.svg" alt="mysql" />
+            </div>
+            
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/github.svg" alt="github" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="project">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Project
+          </h1>
+
+          <div class="projects">
+            <div data-aos="zoom-in-down" data-aos-delay="300" class="card">
+              <img src="assets/project.png" alt="project" />
+
+              <div class="description">
+                <h1>Novaspace</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  voluptas eaque enim soluta blanditiis velit quisquam delectus
+                  reiciendis debitis laboriosam.
+                </p>
+                <div class="action">
+                  <button>Github</button>
+                  <button>Demo</button>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
+              <img src="assets/project.png" alt="project" />
+
+              <div class="description">
+                <h1>Novaspace</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  voluptas eaque enim soluta blanditiis velit quisquam delectus
+                  reiciendis debitis laboriosam.
+                </p>
+                <div class="action">
+                  <button>Github</button>
+                  <button>Demo</button>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-delay="500" class="card">
+              <img src="assets/project.png" alt="project" />
+
+              <div class="description">
+                <h1>Novaspace</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  voluptas eaque enim soluta blanditiis velit quisquam delectus
+                  reiciendis debitis laboriosam.
+                </p>
+                <div class="action">
+                  <button>Github</button>
+                  <button>Demo</button>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-delay="300" class="card">
+              <img src="assets/project.png" alt="project" />
+
+              <div class="description">
+                <h1>Novaspace</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  voluptas eaque enim soluta blanditiis velit quisquam delectus
+                  reiciendis debitis laboriosam.
+                </p>
+                <div class="action">
+                  <button>Github</button>
+                  <button>Demo</button>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
+              <img src="assets/project.png" alt="project" />
+
+              <div class="description">
+                <h1>Novaspace</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  voluptas eaque enim soluta blanditiis velit quisquam delectus
+                  reiciendis debitis laboriosam.
+                </p>
+                <div class="action">
+                  <button>Github</button>
+                  <button>Demo</button>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-delay="500" class="card">
+              <img src="assets/project.png" alt="project" />
+
+              <div class="description">
+                <h1>Novaspace</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  voluptas eaque enim soluta blanditiis velit quisquam delectus
+                  reiciendis debitis laboriosam.
+                </p>
+                <div class="action">
+                  <button>Github</button>
+                  <button>Demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+          <div class="content">
+            <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+              Contact
+            </h1>
+      
+            <form
+              data-aos="zoom-in-down"
+              data-aos-delay="300"
+              class="contact-form"
+              id="contactForm"
+              onsubmit="sendWhatsAppMessage(event)"
+            >
+              <div class="input">
+                <input type="text" id="name" placeholder="Name..." required />
+                <input type="email" id="email" placeholder="Email..." required />
+                <input type="number" id="phone" placeholder="Phone..." required />
+                <input type="text" id="subject" placeholder="Subject..." required />
+              </div>
+              <textarea id="message" name="message" placeholder="Message..." required></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+      <script>
+        function sendWhatsAppMessage(event) {
+          event.preventDefault(); // Evitar el envío del formulario
+      
+          // Obtener los valores de los campos
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const phone = document.getElementById('phone').value;
+          const subject = document.getElementById('subject').value;
+          const message = document.getElementById('message').value;
+      
+          // Crear el mensaje de WhatsApp
+          const whatsappMessage = `Nombre: ${name}\nEmail: ${email}\nTeléfono: ${phone}\nAsunto: ${subject}\nMensaje: ${message}`;
+          const encodedMessage = encodeURIComponent(whatsappMessage);
+          
+          // Número de WhatsApp al que se enviará el mensaje
+          const phoneNumber = '3027247457';
+          
+          // Enlace a WhatsApp
+          const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+      
+          // Redirigir al usuario a WhatsApp
+          window.open(whatsappLink, '_blank');
+        }
+      </script>
+
+<footer>
+  <div class="container">
+      <div class="profile">
+          <div class="logo">
+              <img src="assets/A la carta.png" alt="logo" />
+              <a href="#">A la Carta</a>
+          </div>
+          <p>Tus Órdenes en Orden</p>
+          <div class="whatsapp">
+              <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank">
+                  <box-icon color="#fff" type="logo" name="whatsapp" size="50px"></box-icon>
+              </a>
+          </div>
+      </div>
+
+      <div class="link-container">
+          <div class="information">
+              <h1>Nuestras habilidades</h1>
+              <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                  <li>MySQL</li>
+                  <li>GitHub</li>
+              </ul>
+          </div>
+
+          <div class="navigation">
+              <h1>Navegación</h1>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Skill</a></li>
+                  <li><a href="#">Project</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+    <script src="script.js"></script>
+    <!-- Box Icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

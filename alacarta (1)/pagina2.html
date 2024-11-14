@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/A la carta.png">
+    <link rel="stylesheet" href="style2.css"> <!-- Enlace al CSS -->
+    <title>Segundo Semestre - A LA CARTA</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById('nav-mobile');
+            nav.style.display = nav.style.display === 'none' ? 'block' : 'none';
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            ScrollReveal().reveal('.reveal', {
+                distance: '50px',
+                duration: 1000,
+                easing: 'ease-in-out',
+                origin: 'bottom',
+                interval: 200 // Intervalo entre animaciones
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/A la carta.png" alt="logo">
+            <a href="/">A LA CARTA</a>
+        </div>
+        <nav>
+            <a href="#" id="menu" onclick="toggleMenu()">Menu</a>
+            <div id="nav-mobile" style="display: none;">
+                <a href="#" id="close-mobile" onclick="toggleMenu()">Cerrar</a>
+                <a href="/">Inicio</a>
+              <a href="pagina1.html">Primer Semestre</a>
+                <a href="pagina2.html">Segundo Semestre</a>
+                <a href="pagina3.html">Tercer Semestre</a>
+                <a href="pagina4.html">Cuarto Semestre</a>
+                <a href="pagina5.html">Quinto Semestre</a>
+                <a href="pagina6.html">Sexto Semestre</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <h2>Preguntas Formulario</h2>
+            <iframe src="https://forms.gle/ivC2FMdKxrU1rgqk9" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </div>
+    
+        <div class="carrusel-container">
+            <h2>Resultados Encuesta</h2>
+            <div class="mySlides fade">
+                <img src="assets/carrusel1.png" alt="Imagen 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/carrusel2.png" alt="Imagen 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/carrusel3.png" alt="Imagen 3">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/carrusel4.png" alt="Imagen 4">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/carrusel5.png" alt="Imagen 5">
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+            <div class="elements">
+                <span class="quadrate" onclick="currentSlide(1)"></span>
+                <span class="quadrate" onclick="currentSlide(2)"></span>
+                <span class="quadrate" onclick="currentSlide(3)"></span>
+                <span class="quadrate" onclick="currentSlide(4)"></span>
+                <span class="quadrate" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </div>
+<div class="database-container reveal" style="width: 80%; display: flex; margin-top: 40px;">
+    <div class="database-info" style="flex: 1; padding-right: 20px;">
+        <h2>Creación de la Base de Datos</h2>
+        <p>Se diseñó una base de datos robusta para almacenar la información de los clientes y sus órdenes. La estructura de la base de datos permite una fácil gestión y recuperación de datos, optimizando la experiencia del usuario en el sistema.</p>
+    </div>
+    <div class="database-image" style="flex: 1;">
+        <img src="assets/base de datos mysql a  la carta.jpeg" alt="Imagen de la Base de Datos" style="width: 100%; border-radius: 10px;">
+    </div>
+</div>
+</div>
+<div class="diccionario-container reveal" style="width: 80%; display: flex; margin-top: 40px;">
+    <div class="diccionario-info" style="flex: 1; padding-right: 20px;">
+        <h2>Creación Diccionario de Datos</h2>
+        <p>Se creó el diccionario de datos para poder dar un control de la creación de la base de datos y poder dar documentación más clara para alguien que no esté en el proyecto.</p>
+    </div>
+    <div class="diccionario-excel" style="flex: 1;">
+        <iframe src="https://docs.google.com/spreadsheets/d/1jgNSD4KiKUS0j8zHJL37t_J5uRg4nhgm/edit?usp=sharing&ouid=112653127697303631143&rtpof=true&sd=true" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+</div>
+<div class="database-creation-container reveal" style="width: 80%; display: flex; margin-top: 40px;">
+    <div class="database-creation-info" style="flex: 1; padding-right: 20px;">
+        <h2>Creación de Base de Datos</h2>
+        <p>Se definió el código que definiría la base de datos, tablas, atributos, llaves primarias y foráneas.</p>
+    </div>
+    <div class="database-creation-pdf" style="flex: 1;">
+        <iframe src="https://drive.google.com/file/d/1NaYSOUeINzaf0BneMNgHWhbaq45hO-pk/view?usp=sharing" width="300%" height="300" frameborder="0"></iframe>
+    </div>
+</div>
+    <footer>
+        <div class="container">
+            <div class="profile">
+                <div class="logo">
+                    <img src="assets/A la carta.png" alt="logo" />
+                    <a href="#">A la Carta</a>
+                </div>
+                <p>Tus Órdenes en Orden</p>
+                <div class="whatsapp">
+                    <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank">
+                        <box-icon color="#fff" type="logo" name="whatsapp" size="50px"></box-icon>
+                    </a>
+                </div>
+            </div>
+      
+            <div class="link-container">
+                <div class="information">
+                    <h1>Nuestras habilidades</h1>
+                    <ul>
+                        <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>MySQL</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+              
+                    <div class="navigation">
+                        <h1>Navegación</h1>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Skill</a></li>
+                            <li><a href="#">Project</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="script2.js"></script> <!-- Enlace al JS -->
+    </body>
+    </html>
